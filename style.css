@@ -1,0 +1,639 @@
+@charset "utf-8";
+
+/* 共通部分 */
+body{
+  line-height: 1.7;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo","メイリオ", Helvetica,Sans-Serif;
+  color: #2b3f43;
+}
+.wrapper1{
+  width: 90%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+
+/* ヘッダー部分 */
+.header-container{
+  z-index: 3;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+.header-nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.logo{
+  color: #6fc173;
+}
+.logo:hover{
+  color: #8cf591;
+}
+.header-btn-box{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.header-btn{
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px #fff solid;
+}
+.header-btn:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-title{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.header-container p{
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header-container p:nth-of-type(2){
+  font-size: 1.5rem;
+}
+.button{
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 200px;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  background: #6fc173;
+  border-radius: 10px;
+  transform: translateY(-3px);
+  box-shadow: 0 3px #449f49;
+}
+.button:hover{
+  transform: none;
+  box-shadow: 0 1px #449f49;
+}
+.video-container{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.video-overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+header{
+  height: 560px;
+  margin-bottom: 50px;
+}
+
+/* 概要上部 */
+.wrapper2{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.info-top .desc{
+  text-align: center;
+}
+.info-top-title{
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.info-top-p{
+  margin-bottom: 30px;
+}
+.info-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.info-box{
+  width: 30%;
+}
+.info-box h3{
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.4rem;
+}
+.info-top{
+  margin-bottom: 50px;
+}
+.info-box img{
+  border-radius: 5px;
+}
+
+/* 概要下部 */
+#info-bottom-img{
+  background-image: url(images/buildings-4621816_1280.jpg);
+  width: 100%;
+  height: 600px;
+}
+.info-bottom{
+  padding-top: 130px;
+  margin-bottom: 50px;
+}
+.info-bottom p{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.info-bottom-title{
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.info-bottom .desc h2{
+  text-align: center;
+}
+
+/* メイン部分 */
+.wrapper3{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.desc-top{
+  margin-bottom: 30px;
+}
+.desc-top h2{
+  text-align: center;
+}
+.desc-top h3{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.desc-top p{
+  margin-bottom: 1rem;
+}
+.desc-top a{
+  color: #5fb2c1;
+}
+.desc-top a:hover{
+  color: #468591;
+}
+.item{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.item-box{
+  display: flex;
+  justify-content: space-between;
+}
+.item-box img{
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.event-top table{
+  border-collapse:collapse;
+  border-left: 1px #e5e5d1 solid;
+  border-bottom: 1px #e5e5d1 solid;
+  margin-bottom: 30px;
+}
+.event-top td{
+  border-top: 1px #e5e5d1 solid;
+  border-right: 1px #e5e5d1 solid;
+}
+.event-top-left{
+  width: 10%;
+  text-align: center;
+  padding: 10px;
+}
+.event-top-right{
+  padding: 5px 20px;
+}
+.event-top table tr:nth-child(even){
+  background-color: #f8f7f2;
+} 
+.event-top h3{
+  margin-bottom: 5px;
+}
+.event-bottom table{
+  border-collapse:collapse;
+  border-left: 1px #e5e5d1 solid;
+  border-bottom: 1px #e5e5d1 solid;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.event-bottom td{
+  border-top: 1px #e5e5d1 solid;
+  border-right: 1px #e5e5d1 solid;
+  text-align: center;
+}
+.event-bottom th{
+  border-top: 1px #e5e5d1 solid;
+  border-right: 1px #e5e5d1 solid;
+  width: calc(100% / 7);
+  text-align: center;
+}
+.event-bottom table tr:nth-child(even){
+  background-color: #f8f7f2;
+} 
+.event-bottom h3{
+  margin-bottom: 5px;
+}
+.event-bottom{
+  margin-bottom: 40px;
+}
+.desc-bottom a{
+  color: #5fb2c1;
+}
+.desc-bottom a:hover{
+  color: #468591;
+}
+.desc-bottom h3{
+  text-align: center;
+}
+.desc-bottom img{
+  width: 200px;
+  height: 160px;
+  margin-right: 20px;
+}
+.desc-bottom-box{
+  display: flex;
+  justify-content: space-between;
+}
+.desc-bottom h3{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.desc-bottom{
+  margin-bottom: 100px;
+}
+
+/* コンタクトミドル */
+#contact-middle-img{
+  background-image: url(images/vancouver-1768956_1280.jpg);
+  background-color: rgba(0, 110, 255, 0.5);
+  background-blend-mode: hard-light;
+  background-size: cover;
+}
+.contact-middle{
+  padding: 75px 0;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.contact-middle h2{
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-shadow: 1px 1px rgb(110, 110, 110);
+  text-align: center;
+}
+
+/* 受講者の声 */
+.article .info-top-title{
+  text-align: center;
+}
+.article-item{
+  display: flex;
+  justify-content: space-between;
+}
+.article-item-left img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.article-item-left p{
+  text-align: center;
+}
+.article-item-right{
+  background: #f8f7f2;
+  padding: 30px;
+  margin-left: 20px;
+}
+.article-item{
+  margin-bottom: 100px;
+}
+
+/* 講師紹介 */
+.privacy{
+  background: #f8f7f2;
+  padding: 5% 0 7%;
+  margin-bottom: 50px;
+}
+.privacy-content{
+  display: flex;
+  justify-content: space-between;
+}
+.privacy-item{
+  width: 30%;
+}
+.privacy h2{
+  text-align: center;
+}
+.privacy .info-top-p{
+  text-align: center;
+}
+.privacy img{
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.privacy h4{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.privacy a{
+  color: #5fb2c1;
+}
+.privacy a:hover{
+  color: #468591;
+}
+
+/* ステップ */
+.step{
+  margin-bottom: 80px;
+}
+.step h2{
+  text-align: center;
+}
+.step-list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.step-item{
+  position: relative;
+  padding-top: 1px;
+  padding-left: 60px;
+}
+.step-item h4{
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.step-no{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #5fb2c1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+.step-small{
+  font-size: 0.7rem;
+}
+.step a{
+  color: #5fb2c1;
+}
+.step a:hover{
+  color: #468591;
+}
+
+/* コンタクトボトム */
+#contact-bottom-img{
+  background-image: url(images/aircraft-3702676_1280.jpg);
+  background-color: rgba(0, 110, 255, 0.5);
+  background-blend-mode: hard-light;
+  background-size: cover;
+}
+
+/* ボイス */
+.voice h2{
+  text-align: center;
+}
+.voice audio{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.voice p{
+  margin-bottom: 20px;
+}
+.voice a{
+  color: #5fb2c1;
+}
+.voice a:hover{
+  color: #468591;
+}
+.voice{
+  margin-bottom: 50px;
+}
+
+/* プライス */
+.price{
+  background: #f8f7f2;
+  padding: 5% 0;
+  margin-bottom: 50px;
+}
+.price p{
+  text-align: center;
+}
+.price h2{
+  text-align: center;
+}
+.price-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.price-box{
+  width: 28%;
+}
+.price-box table{
+  width: 100%;
+}
+.price-box span{
+  font-size: 1rem;
+}
+.price-box td{
+  border-top: 1px #e5e5d1 solid;
+  border-right: 1px #e5e5d1 solid;
+  padding: 10px;
+}
+.price-box tr:nth-child(1){
+  background: #6fc173;
+  color: #fff;
+  font-weight: bold;
+}
+.price-box tr:nth-child(2){
+  background: #6fc173;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.price-box tr:nth-child(n+3):nth-child(-n+8){
+  background: #fff;
+}
+.price-box table{
+  border-collapse:collapse;
+  border-bottom: 1px #e5e5d1 solid;
+  border-left: 1px #e5e5d1 solid;
+  text-align: center;
+}
+.not-available{
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+/* 質問 */
+.inquiry h2{
+  text-align: center;
+}
+.inquiry{
+  margin-bottom: 80px;
+}
+.wrapper4{
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* お問い合わせ */
+.contact-top{
+  padding: 60px;
+  background: #f8f7f2;
+  text-align: center;
+}
+.contact-top a{
+  color: #5fb2c1;
+}
+.contact-top a:hover{
+  color: #468591;
+}
+
+/* フッター部分 */
+.footer{
+  background: #2b3f43;
+  padding: 40px;
+  text-align: center;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.footer-icon p{
+  margin: 0 25px;
+}
+.footer a{
+  color: #5fb2c1;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #468591;
+}
+.footer p{
+  color: #f8f7f2;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.link p{
+  margin: 0 10px;
+}
+
+@media (max-width: 800px){
+  .header-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .header-title{
+    font-size: 1.8rem;
+  }
+  .header-title span{
+    display: block;
+  }
+  .info-flex{
+    flex-direction: column;
+  }
+  .info-box{
+    width: 100%;
+    text-align: center;
+  }
+  .info-box img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .item{
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+  .item-box{
+    justify-content: flex-start;
+  }
+  .article-item{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article-item-left{
+    text-align: center;
+  }
+  .article-item-left p{
+    margin-bottom: 10px;
+  }
+  .privacy-content{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .privacy-item{
+    width: 100%;
+  }
+  .privacy-item div{
+    text-align: center;
+  }
+  .privacy img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+  .privacy p{
+    margin-bottom: 40px;
+  }
+  .step-list{
+    grid-template-columns: repeat(1, minmax(240px, 1fr));
+  }
+  .step-item h4{
+    margin-top: 3px;
+  }
+  .price-flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .price-box{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .price-box:last-child{
+    margin-bottom: 0;
+  }
+  .link{
+    flex-direction: column;
+  }
+  .link p{
+    margin-bottom: 20px;
+  }
+
+}
